@@ -1,19 +1,39 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { AboutSection } from "@/components/AboutSection";
+import { DifferentialsSection } from "@/components/DifferentialsSection";
+import { FAQSection } from "@/components/FAQSection";
+import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Raio Solar — Energia Solar em Belém e Região | Economia de até 95%" },
+      { name: "description", content: "Empresa 100% paraense especializada em energia solar. Reduza sua conta de energia em até 95%. Atendimento em Belém e região metropolitana desde 2015." },
+      { property: "og:title", content: "Raio Solar — Energia Solar em Belém e Região" },
+      { property: "og:description", content: "Reduza sua conta de energia em até 95% com a força do sol do Pará. Tecnologia de vanguarda e engenharia 100% paraense." },
+      { property: "og:type", content: "website" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <DifferentialsSection />
+        <FAQSection />
+        <CTASection />
+      </main>
+      <Footer />
+      <WhatsAppFloat />
+    </>
+  );
 }
