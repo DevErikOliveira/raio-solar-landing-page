@@ -30,7 +30,9 @@ function Index() {
       <main>
         <HeroSection />
         <AboutSection />
+        <ServicesSection />
         <DifferentialsSection />
+        <AdvantagesSection />
         <FAQSection />
         <CTASection />
       </main>
