@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo.png";
 
 const WHATSAPP_URL = "https://wa.me/5591993910003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20energia%20solar!";
@@ -7,12 +6,12 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20">
-        <Link to="/" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <img src={logo} alt="Raio Solar" className="h-10 sm:h-12 w-auto" />
           <span className="text-lg sm:text-xl font-bold text-foreground">
             Raio <span className="text-gradient-solar">Solar</span>
           </span>
-        </Link>
+        </a>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <a href="#sobre" className="hover:text-foreground transition-colors">Quem Somos</a>
