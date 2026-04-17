@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "/logo_raio_solar.png";
 
 export function Footer() {
   return (

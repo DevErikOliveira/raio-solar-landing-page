@@ -9,8 +9,11 @@ import { SavingsCalculatorSection } from "@/components/SavingsCalculatorSection"
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function App() {
+  useScrollReveal();
+
   return (
     <>
       <Header />

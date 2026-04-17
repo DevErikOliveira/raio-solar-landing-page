@@ -17,7 +17,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-surface/95 via-surface/80 to-surface/40" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-solar/10 border border-solar/20 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 rounded-full bg-solar animate-pulse" />

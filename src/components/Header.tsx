@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "/logo_raio_solar.png";
 
 const WHATSAPP_URL = "https://wa.me/5591993910003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20energia%20solar!";
 
