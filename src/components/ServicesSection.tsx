@@ -26,32 +26,34 @@ export function ServicesSection() {
             <span className="text-gradient-solar">por você</span>
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-surface-foreground/70 leading-relaxed">
-            Projetos, dimensionamento, regularização, instalação, comissionamento e manutenção de sistemas de geração solar fotovoltaica.
+            Vendas de equipamentos, instalação, manutenção, projetos fotovoltaicos, homologação e projetos elétricos de sistemas de geração solar fotovoltaica.
           </p>
-          <p className="mt-4 text-base sm:text-lg text-surface-foreground/60 leading-relaxed">
-            Você tem apenas o trabalho de fornecer os documentos necessários, e nós faremos todo o restante. Todas as etapas são executadas com bastante esmero por profissionais qualificados, com foco na satisfação do cliente.
-          </p>
+          
 
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
             {[
-              { icon: "📐", label: "Projetos" },
-              { icon: "📊", label: "Dimensionamento" },
-              { icon: "📋", label: "Regularização" },
-              { icon: "🔧", label: "Instalação" },
-              { icon: "⚡", label: "Comissionamento" },
-              { icon: "🛠️", label: "Manutenção" },
+              { icon: "📦", label: "Vendas de Equipamentos" },
+              { icon: "🔧", label: "Instalação do Sistema" },
+              { icon: "🛠️", label: "Manutenção do Sistema" },
+              { icon: "📐", label: "Projeto Fotovoltaico" },
+              { icon: "📋", label: "Homologação" },
+              { icon: "⚡", label: "Projeto Elétrico" },
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-surface-foreground/5 backdrop-blur-sm border border-surface-foreground/10 rounded-xl p-5 text-center"
+                className="bg-surface-foreground/5 backdrop-blur-sm border border-surface-foreground/10 rounded-xl p-3 sm:p-5 text-center"
               >
                 <span className="text-2xl">{item.icon}</span>
-                <p className="mt-2 text-sm font-semibold text-surface-foreground">
+                <p className="mt-2 text-xs sm:text-sm font-semibold text-surface-foreground">
                   {item.label}
                 </p>
               </div>
             ))}
-          </div>
+          </div> <br />
+
+          <p className="mt-4 text-base sm:text-lg text-surface-foreground/60 leading-relaxed">
+            Você tem apenas o trabalho de fornecer os documentos necessários, e nós faremos todo o restante. Todas as etapas são executadas com bastante cuidado por profissionais qualificados, com foco na sua satisfação.
+          </p>
 
           <div className="mt-10">
             <a
